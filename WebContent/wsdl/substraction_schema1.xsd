@@ -1,0 +1,20 @@
+<xs:schema xmlns:tns="http://main/" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://main/" version="1.0">
+
+  <xs:element name="substract" type="tns:substract"/>
+
+  <xs:element name="substractResponse" type="tns:substractResponse"/>
+
+  <xs:complexType name="substract">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+      <xs:element name="arg1" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="substractResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
